@@ -14,11 +14,6 @@ sudo apt update && sudo apt install -y bcftools samtools gffread wget
 
 ## 2. Download Reference Data
 
-### Create Data Directory
-```bash
-mkdir -p data
-```
-
 ### Download Zebrafish Genome Reference (GRCz11)
 ```bash
 cd data
@@ -64,7 +59,3 @@ After running the workflow, the directory structure will look like this:
 ## 5. Notes
 - Ensure that VCF files are properly indexed (`.vcf.gz` with `.tbi` index)
 - Reference genome and GTF must match in version (`GRCz11, release 109`)
-
-## 6. License
-This workflow is open-source and can be freely modified and shared.
-
