@@ -70,6 +70,3 @@ Test files are provided in the `test/` directory. You can run the workflow using
 ## 5. Notes
 - Reference genome and GTF must match in version (GRCz11, release 109).
 - The `test/` directory contains example VCF files to validate the workflow.
-
-## 6. License
-This project is licensed under the MIT License.
