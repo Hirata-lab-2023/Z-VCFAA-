@@ -1,4 +1,5 @@
 # Z-VCFAA-
+
 ## Extracting Protein Sequences from VCF using Zebrafish Genome
 
 This document describes the workflow for generating FASTA files from VCF data and translating them into protein sequences using a reference genome and GTF annotation.
@@ -32,8 +33,10 @@ cd ..
 
 ### Run VCF to FASTA Conversion and Protein Translation Script
 
+Ensure that the VCF file is sorted and indexed with tabix before running. Also, specify the full path for the `-v` option.
+
 ```bash
-bash generate_fasta.sh -v path/to/sample.vcf.gz
+bash generate_fasta.sh -v /absolute/path/to/sample.vcf.gz
 ```
 
 This script will:
@@ -57,5 +60,5 @@ After running the workflow, the directory structure will look like this:
 ```
 
 ## 5. Notes
-- Ensure that VCF files are properly indexed (`.vcf.gz` with `.tbi` index)
-- Reference genome and GTF must match in version (`GRCz11, release 109`)
+- Reference genome and GTF must match in version (GRCz11, release 109).
+
