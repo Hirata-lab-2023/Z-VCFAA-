@@ -4,7 +4,16 @@
 
 This repository provides a workflow for generating FASTA files from VCF data and translating them into protein sequences using a reference genome and GTF annotation.
 
-## 1. Setup Environment
+## 1. Clone the Repository
+
+To get started, clone this repository:
+
+```bash
+git clone https://github.com/Hirata-lab-2023/Z-VCFAA-.git
+cd Z-VCFAA-
+```
+
+## 2. Setup Environment
 
 ### Install Required Tools
 Ensure you have the following tools installed:
@@ -13,7 +22,7 @@ Ensure you have the following tools installed:
 sudo apt update && sudo apt install -y bcftools samtools gffread wget
 ```
 
-## 2. Download Reference Data
+## 3. Download Reference Data
 
 ### Download Zebrafish Genome Reference (GRCz11)
 ```bash
@@ -32,7 +41,7 @@ gunzip Danio_rerio.GRCz11.109.gtf.gz
 cd ..
 ```
 
-## 3. Generate FASTA from VCF and Translate to Protein Sequences
+## 4. Generate FASTA from VCF and Translate to Protein Sequences
 
 ### Run VCF to FASTA Conversion and Protein Translation Script
 
@@ -51,7 +60,7 @@ This script will:
 ### Test the Workflow
 Test files are provided in the `test/` directory. You can run the workflow using these sample files to verify functionality.
 
-## 4. Repository Structure
+## 5. Repository Structure
 ```
 .
 ├── data
@@ -67,6 +76,6 @@ Test files are provided in the `test/` directory. You can run the workflow using
 ├── README.md
 ```
 
-## 5. Notes
+## 6. Notes
 - Reference genome and GTF must match in version (GRCz11, release 109).
 - The `test/` directory contains example VCF files to validate the workflow.
