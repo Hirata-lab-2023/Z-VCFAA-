@@ -66,7 +66,7 @@ Test files are provided in the `test/` directory. You can run the workflow using
 ├── data
 │   ├── Danio_rerio.GRCz11.dna.primary_assembly.fa
 │   ├── Danio_rerio.GRCz11.109.gtf
-├── output
+├── fa
 │   ├── sample_full.fa
 │   ├── sample_proteins.fa
 ├── test
