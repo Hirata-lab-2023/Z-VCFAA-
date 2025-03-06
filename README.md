@@ -48,7 +48,7 @@ cd ..
 Ensure that the VCF file is sorted and indexed with `tabix` before running. Also, specify the full path for the `-v` option.
 
 ```bash
-bash generate_fasta.sh -v /absolute/path/to/sample.vcf.gz
+bash generate_fasta.sh -v path/to/sample.vcf.gz
 ```
 
 This script will:
